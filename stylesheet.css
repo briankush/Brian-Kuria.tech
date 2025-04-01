@@ -34,7 +34,7 @@ body {
     padding: 0 20px;
 }
 
-/* Top Navigation - Centered Version */
+/* Top Navigation */
 .top-nav {
     display: flex;
     justify-content: center;
@@ -61,7 +61,7 @@ body {
     max-width: 1200px;
 }
 
-/* Logo with decorative corners - No border */
+/* Logo Styles */
 .logo {
     margin-right: auto;
 }
@@ -104,6 +104,7 @@ body {
     right: 0;
 }
 
+/* Navigation Styles */
 .nav {
     display: flex;
     gap: 30px;
@@ -134,6 +135,39 @@ body {
     margin-right: 8px;
 }
 
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: var(--bg-black-100);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 15px;
+        transform: translateY(-150%);
+        transition: transform 0.3s ease;
+        z-index: 999;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav.active {
+        display: flex;
+        transform: translateY(0);
+    }
+
+    .nav-toggler {
+        display: flex;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1001;
+    }
+}
+
 .nav-toggler {
     display: none;
     height: 40px;
@@ -145,27 +179,6 @@ body {
     align-items: center;
     justify-content: center;
     margin-left: auto;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1001;
-}
-
-/* Mobile Navigation */
-.nav {
-    display: none;
-    position: fixed;
-    top: 60px;
-    right: 0;
-    background: var(--bg-black-100);
-    width: 100%;
-    padding: 20px;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.nav.active {
-    display: block;
 }
 
 /* Home Section */
@@ -278,6 +291,7 @@ h3.my-profession {
 
 .about-text {
     padding-bottom: 40px; /* Creates space for the button */
+    padding-top: 50px;
 }
 
 .skills ul {
