@@ -2,65 +2,217 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE= =edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="colour-1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Brian Kuria - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div class="main-container"> 
-        <div class="aside">
-          <div class="logo">
-            <a href="#">Javan</a>
-          </div>
-          <div class="nav-toggler">
-            <span></span>
-          </div>
-          <ul class="nav">
-            <li><a href="#"><i class="active"></i>Home</a></li>
-            <li><a href="#"><i class="fa fa- user"></i>About</a></li>
-            <li><a href="#"><i class="fa fa- list"></i>Services</a></li>
-            <li><a href="#"><i class="fa fa- briefcase"></i>Portfolio</a></li>
-            <li><a href="#"><i class="fa fa- comments"></i>Contact</a></li>
-          </ul>
-        </div>
-        <div class="main-content">
-             <section class="home section hidden">
-               <div class="container">
-                <div class="row">
-                  <div class="home-info padd-15">
-                    <h3 class="hello">Hello, my name is <span class="name">Brian Kuria</span> </h3>
-                    <h3 class="my-profession">I'm a <span class="typing">web designer</span></h3>
-                    <p>I'm a web Designer with extensive expirience. My expertise is to create websites, graphic design and many more...</p>
-                    <a href="#contact" class="btn hire-me">Hire Me</a>
-                  </div>
-                  <div class="home-img">
-                    <img src="dfhoo6j-85d7595b-6957-431f-8477-4b0d78e8789a.png" alt="">
-                  </div>
+    <div class="main-container">
+        <!-- Top Navigation -->
+        <header class="top-nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="#"><span>Brian</span></a>
                 </div>
-               </div>
-             </section>
- <section class="about section">
-  <div class="container">
-    <div class="row">
-      <div class="section-title padd-15">
-        <h2>About Me</h2>
-      </div>
-    </div>
-  </div>
-      <div class="row">
-        <div class="about-content">
-          About
-        </div>
-      </div>
- </section>            
-        </div>
+                <ul class="nav">
+                    <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#services"><i class="fas fa-list"></i> Services</a></li>
+                    <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+                <div class="nav-toggler">
+                    <span></span>
+                </div>
+            </div>
+        </header>
 
+        <main class="main-content">
+            <!-- Home Section -->
+            <section id="home" class="home section">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info padd-15">
+                            <h3 class="hello">Hello, my name is Brian Kuria</h3>
+                            <h3 class="my-profession"><i class="fas fa-laptop-code"></i> I'm a <span class="typing">web designer, Graphics designer,Photographer and Video Editor </span></h3>
+                            <p> I'm a web Designer, Graphics designer and a developer with extensive experience. My expertise is to create websites, graphic designs for personal and corporate level branding and many more...</p>
+                            <a href="#contact" class="btn hire-me"><i class="fas fa-handshake"></i> Hire Me</a>
+                        </div>
+                        <div class="home-img">
+                            <img src="ME2.jpeg" alt="Profile picture">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br><br>
+
+            <!-- About Section -->
+            <section id="about" class="about section">
+                <div class="container">
+                    <div class="section-title padd-15">
+                        <h2><i class="fas fa-user-tie"></i> About Me</h2>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="about-text">
+                                <p> I'm an individual  passionate in the tech field  with  some experience creating digital solutions. Specialized in modern web technologies and user-centric design, Graphic design and branding  for marketing purposes of different organizations as well photography and video editing.</p>
+                                <br>
+                                <div class="skills">
+                                    <h3><i class="fas fa-code"></i> Skills</h3>
+                                    <ul>
+                                        <li><i class="fab fa-html5"></i> HTML5</li>
+                                        <li><i class="fab fa-css3-alt"></i> CSS</li>
+                                        <li><i class="fab fa-js"></i> JavaScript</li>
+                                        <li><i class="fas fa-image"></i> Adobe Photoshop and Lightroom Classic</li>
+                                        <li><i class="fas fa-pencil-ruler"></i> Adobe Illustrator</li>
+                                        <li><i class="fas fa-video"></i> Adobe Premiere Pro</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn"><i class="fas fa-download"></i> Download CV</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br><br><br>
+
+           <!-- Services Section -->
+<section id="services" class="services section">
+    <div class="container">
+        <div class="section-title padd-15">
+            <h2><i class="fas fa-list"></i> Services</h2>
+        </div>
+        <div class="row">
+            <div class="service-item padd-15">
+                <div class="service-card">
+                    <i class="fas fa-code service-icon"></i>
+                    <h3>Web Development</h3>
+                    <p>Custom website development using modern technologies and frameworks.</p>
+                </div>
+            </div>
+            <div class="service-item padd-15">
+                <div class="service-card">
+                    <i class="fas fa-palette service-icon"></i>
+                    <h3>Graphic Design</h3>
+                    <p>Creative visual solutions for branding and digital media.</p>
+                </div>
+            </div>
+            <div class="service-item padd-15">
+                <div class="service-card">
+                    <div class="media-icons">
+                        <i class="fas fa-video service-icon"></i>
+                        <i class="fas fa-camera service-icon"></i>
+                    </div>
+                    <h3>Video Editing & Photography</h3>
+                    <p>Your one-stop spot for all your video editing and event coverage needs in weddings, corporate events, and more.</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <script scr="js/script.js"></script>
-    
+</section>
+<br><br><br>
+
+            <!-- Portfolio Section -->
+            <section id="portfolio" class="portfolio section">
+                <div class="container">
+                    <div class="section-title padd-15">
+                        <h2><i class="fas fa-briefcase"></i> Portfolio</h2>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-card">
+                                <img src="WEB DEV.webp" alt="Web Design Project">
+                                <div class="portfolio-overlay">
+                                    <h3>E-commerce Website</h3>
+                                    <p>Full-stack shopping platform</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-card">
+                                <img src="Brand.webp" alt="Branding Project">
+                                <div class="portfolio-overlay">
+                                    <h3>Brand Identity</h3>
+                                    <p>Complete branding package for all your buisness needs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br><br><br>
+
+ <!-- Contact Section -->
+<section id="contact" class="contact section">
+    <div class="container">
+        <div class="section-title padd-15">
+            <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+        </div>
+        <div class="row">
+            <div class="contact-form-container padd-15">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number" pattern="[0-9]{10}" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="6" required></textarea>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Add contact info block -->
+        <div class="contact-info padd-15">
+            <div class="contact-info-item">
+                <i class="fas fa-phone"></i>
+                <h3>Call or message me</h3>
+                <p>+254724829437</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <div class="social-footer">
+            <div class="social-links">
+                <a href=" https://github.com/briankush"><i class="fab fa-github"></i></a>
+                <a href=" https://www.linkedin.com/in/brian-mwangi-a493a12a2/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/cytro254?igsh=MWM0b252am9xYXczNw=="><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="copyright">&copy; 2025 Brian Kuria. All rights reserved</p>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Mobile navigation toggle
+        document.querySelector('.nav-toggler').addEventListener('click', function() {
+            document.querySelector('.nav').classList.toggle('active');
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
