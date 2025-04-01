@@ -180,6 +180,60 @@ body {
     justify-content: center;
     margin-left: auto;
 }
+/* Hamburger Menu Icon */
+.nav-toggler span {
+    display: block;
+    height: 2px;
+    width: 25px;
+    background: var(--text-black-900);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-toggler span::before,
+.nav-toggler span::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: var(--text-black-900);
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.nav-toggler span::before {
+    top: -8px;
+}
+
+.nav-toggler span::after {
+    top: 8px;
+}
+
+/* Animate to X when active */
+.nav.active + .nav-toggler span {
+    background: transparent;
+}
+
+.nav.active + .nav-toggler span::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.nav.active + .nav-toggler span::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+/* Mobile Menu Toggle Button */
+@media (max-width: 768px) {
+    .nav-toggler {
+        display: flex;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1001;
+    }
+}
 
 /* Home Section */
 .home {
