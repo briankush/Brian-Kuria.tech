@@ -476,6 +476,41 @@ h3.my-profession {
     transform: translateY(0);
 }
 
+/* Portfolio link styles */
+.portfolio-link {
+    display: block;
+    position: relative;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.portfolio-link:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-link:hover .portfolio-overlay {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.external-link-icon {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: #fff;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-link:hover .external-link-icon {
+    opacity: 1;
+}
+
+.portfolio-card {
+    position: relative;
+    overflow: hidden;
+}
+
 /* Contact Section */
 .contact-form-container {
     max-width: 800px;
