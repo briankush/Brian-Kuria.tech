@@ -31,8 +31,6 @@ A modern, responsive portfolio website showcasing professional skills, projects,
 - **Font Awesome**: Icons
 - **Google Fonts**: Poppins & Clicker Script fonts
 
-## 📦 Installation
 
-1. Clone repository:
-```bash
-git clone https://github.com/briankush/Brian-Kuria.tech.git
+
+
