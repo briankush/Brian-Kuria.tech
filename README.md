@@ -1,5 +1,5 @@
 # Portfolio Website
-A modern, responsive portfolio website showcasing professional skills, projects, and contact information. Built with pure HTML, CSS, and JavaScript.
+A modern, responsive portfolio website showcasing professional skills, projects, and contact information. Built with pure HTML, CSS.
 
 ## 🚀 Live Demo  
 [View Live Site] https://briankush.github.io/Brian-Kuria.tech/ 
