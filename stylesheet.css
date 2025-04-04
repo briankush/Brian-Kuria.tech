@@ -349,7 +349,7 @@ h3.my-profession {
 }
 
 .about-text {
-    padding-bottom: 40px; /* Creates space for the button */
+    padding-bottom: 40px; 
     padding-top: 50px;
 }
 
@@ -547,7 +547,7 @@ h3.my-profession {
     
 
 }
-/* Add this to your CSS */
+
 .email-link {
     color: var(--text-black-900);
     text-decoration: none;
