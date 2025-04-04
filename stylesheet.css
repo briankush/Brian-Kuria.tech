@@ -31,7 +31,7 @@ body {
 .main-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 /* Top Navigation */
@@ -64,6 +64,7 @@ body {
 /* Logo Styles */
 .logo {
     margin-right: auto;
+    padding-left: 40px;
 }
 
 .logo a {
@@ -111,7 +112,7 @@ body {
     list-style: none;
     margin: 0 auto;
     position: relative;
-    left: -60px;
+    left: 0px;
 }
 
 .nav a {
@@ -307,6 +308,10 @@ h3.hello span {
     right: 20px;
     bottom: -40px;
 }
+.home, .about-content, .services, .portfolio, .contact-form-container {
+    padding-left: 40px;
+    padding-right: 40px;
+}
 
 /* Typography */
 h3.my-profession {
@@ -410,7 +415,7 @@ h3.my-profession {
 
 .service-card {
     background: var(--bg-black-100);
-    padding: 30px;
+    padding: 35px;
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s ease;
@@ -476,40 +481,8 @@ h3.my-profession {
     transform: translateY(0);
 }
 
-/* Portfolio link styles */
-.portfolio-link {
-    display: block;
-    position: relative;
-    transition: all 0.3s ease;
-    text-decoration: none;
-}
 
-.portfolio-link:hover {
-    transform: translateY(-5px);
-}
 
-.portfolio-link:hover .portfolio-overlay {
-    background: rgba(0, 0, 0, 0.8);
-}
-
-.external-link-icon {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-    color: #fff;
-    font-size: 1.5rem;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.portfolio-link:hover .external-link-icon {
-    opacity: 1;
-}
-
-.portfolio-card {
-    position: relative;
-    overflow: hidden;
-}
 
 /* Contact Section */
 .contact-form-container {
@@ -570,6 +543,30 @@ h3.my-profession {
     border-radius: 10px;
     margin: 15px 0;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    align-items: center;
+    
+
+}
+/* Add this to your CSS */
+.email-link {
+    color: var(--text-black-900);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+}
+
+.email-link:hover {
+    color: var(--skin-colour);
+    border-bottom-color: var(--skin-colour);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .email-link {
+        font-size: 14px;
+        word-break: break-all;
+    }
 }
 
 /* Footer Section */
