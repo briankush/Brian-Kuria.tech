@@ -81,6 +81,7 @@ body {
 .logo a span {
     font-family: 'Clicker Script', cursive;
     font-size: 32px;
+    text decoration: none;
 }
 
 .logo a::before {
@@ -104,6 +105,131 @@ body {
     top: 0;
     right: 0;
 }
+
+/* Theme Toggle Button - Icon Only, Responsive, No Overlap */
+.theme-toggle {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    z-index: 2000;
+    background: var(--bg-black-100);
+    border: 1.5px solid var(--bg-black-50);
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--text-black-900);
+    transition: background 0.3s, color 0.3s, border 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    width: 44px;
+    height: 44px;
+}
+
+.theme-toggle span {
+    display: none;
+}
+
+.theme-toggle i {
+    font-size: 22px;
+    pointer-events: none;
+}
+
+/* Responsive: Adjust position for very small screens */
+@media (max-width: 500px) {
+    .theme-toggle {
+        top: 10px;
+        right: 56px;
+        width: 38px;
+        height: 38px;
+        padding: 7px;
+        font-size: 18px;
+    }
+    .theme-toggle i {
+        font-size: 18px;
+    }
+}
+
+/* Prevent theme toggle and hamburger from overlapping on small screens */
+@media (max-width: 768px) {
+    .theme-toggle {
+        top: 20px;
+        right: 70px; /* Space for nav-toggler (hamburger) */
+        left: auto;
+        z-index: 2001;
+    }
+    .nav-toggler {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        left: auto;
+        z-index: 2002;
+    }
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+    --bg-black-900: #181824;
+    --bg-black-100: #23243a;
+    --bg-black-50: #2d2e4a;
+    --text-black-900: #f2f2fc;
+    --text-black-700: #bdbdd7;
+    --skin-colour: #FFB86B;
+    background: var(--bg-black-900);
+}
+
+/* Ensure all elements use variables for color/background */
+body.dark-mode,
+body.dark-mode .main-container,
+body.dark-mode .top-nav,
+body.dark-mode .nav,
+body.dark-mode .nav a,
+body.dark-mode .logo a,
+body.dark-mode .about-content,
+body.dark-mode .service-card,
+body.dark-mode .portfolio-card,
+body.dark-mode .portfolio-overlay,
+body.dark-mode .contact-form,
+body.dark-mode .contact-info-item,
+body.dark-mode .footer,
+body.dark-mode .social-links a,
+body.dark-mode .btn,
+body.dark-mode .skills li {
+    background: var(--bg-black-100) !important;
+    color: var(--text-black-900) !important;
+    border-color: var(--bg-black-50) !important;
+}
+
+body.dark-mode .btn,
+body.dark-mode .btn:hover {
+    background: var(--skin-colour) !important;
+    color: #23243a !important;
+}
+
+body.dark-mode .nav a.active,
+body.dark-mode .nav a:hover,
+body.dark-mode .email-link:hover {
+    color: var(--skin-colour) !important;
+}
+
+body.dark-mode .social-links a:hover {
+    background: var(--skin-colour) !important;
+    color: #23243a !important;
+}
+
+body.dark-mode .typing {
+    color: var(--skin-colour) !important;
+}
+
+body.dark-mode .logo a::before,
+body.dark-mode .logo a::after,
+body.dark-mode .home-img::before,
+body.dark-mode .home-img::after {
+    border-color: var(--skin-colour) !important;
+}
+
 
 /* Navigation Styles */
 .nav {
